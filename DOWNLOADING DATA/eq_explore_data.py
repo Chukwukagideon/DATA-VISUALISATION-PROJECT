@@ -9,3 +9,6 @@ with open(filename) as f:
 readable_file = "data/earthquake/readable_eq_data.json"
 with open(readable_file, "w") as f:
     json.dump(all_eq_data, f, indent=4)
+
+all_eq_dicts = all_eq_data["features"]
+print(len(all_eq_dicts))
